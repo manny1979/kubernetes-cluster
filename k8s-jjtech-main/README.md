@@ -30,7 +30,7 @@
 
 ### steps after succesful deployment of cluster with terraform 
 
-* After you provision the EKS with terraform, you would need to update your Kubernetes context to access the cluster with the following command - **aws eks update-kubeconfig --name name-of-cluster --region region-where-cluster-is-deployed**
+* After you provision the EKS with terraform, you would need to update your Kubernetes context to access the cluster with the following command - aws eks --region us-east-1 update-kubeconfig --name jjtech-demo-cluster
 
 
 * To patch coredns to run on fargate nodes, run the command below 
